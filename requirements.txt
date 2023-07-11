@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+
+requests 
+black
+ipdb
+
+# Sentry
+-e ../../code/sentry-python/
