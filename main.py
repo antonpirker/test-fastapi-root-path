@@ -22,12 +22,13 @@ async def server_api(server_something):
         "returned_by_server": server_something.upper(),
     }
 
+
 @app.post("/post/{server_something}")
 async def server_api_post(server_something):
     sentry_sdk.capture_message("Server received request %s" % server_something)
 
     1/0
-    
+
     return {
         "given_by_you": server_something,
         "returned_by_server": server_something.upper(),
